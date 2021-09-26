@@ -11,6 +11,9 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
+    fontFamily: {
+      sans: ["Nunito", "ui-sans-serif", "system-ui"],
+    },
     extend: {},
   },
   variants: {
