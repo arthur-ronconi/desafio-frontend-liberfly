@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col space-y-4">
     <div class="text-2xl font-bold text-red-500">Comics</div>
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       <div v-for="item in data" :key="item.id">
         <card :data="item" />
       </div>

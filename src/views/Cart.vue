@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-300 rounded-lg p-8 space-y-4">
     <h1 class="text-3xl font-bold text-red-500">Carrinho</h1>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="divide-y divide-gray-400">
         <div
           v-for="item in data"

@@ -22,7 +22,7 @@
       <span>Back</span>
     </button>
   </div>
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
     <div class="flex justify-center">
       <img
         v-if="data.thumbnail"
@@ -57,12 +57,16 @@
       <p>
         {{ data.description }}
       </p>
-      <div class="flex items-start justify-between">
-        <btn class="text-red-500 border border-red-500" @click="generateCoupon"
-          >Look for coupons</btn
-        >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <btn
+            class="text-red-500 border border-red-500"
+            @click="generateCoupon"
+            >Look for coupons</btn
+          >
+        </div>
         <div class="relative flex flex-col space-y-2">
-          <div class="space-x-2">
+          <div class="flex items-center">
             <label class="font-bold">Coupon:</label>
             <input
               type="text"

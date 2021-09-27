@@ -14,14 +14,24 @@
         z-10
       "
     >
-      <h1 class="text-5xl text-white font-bold relative z-20">
+      <h1 class="text-3xl sm:text-5xl text-white font-bold relative z-20">
         The place for your <br />
         Marvel comics
       </h1>
       <img
         src="@/assets/hq2.png"
         alt="Three Marvel comics"
-        class="h-96 absolute right-0 top-12 transform -rotate-12 z-0"
+        class="
+          h-96
+          absolute
+          right-0
+          top-12
+          transform
+          -rotate-12
+          z-0
+          hidden
+          lg:block
+        "
       />
     </div>
   </div>
