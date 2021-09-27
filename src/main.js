@@ -4,7 +4,8 @@ import router from "./router";
 import store from "./store";
 import "./styles/app.css"; // Here
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
+const app = createApp(App);
+
+app.use(store).use(router);
+
+app.mount("#app");

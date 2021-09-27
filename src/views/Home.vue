@@ -1,14 +1,16 @@
 <template>
-  <div class="home">
-    <h1 class="text-2xl">Hello</h1>
+  <div class="space-y-8">
+    <hero />
+    <product-list />
   </div>
 </template>
 
 <script>
+import hero from "../components/home/hero.vue";
+import ProductList from "../components/home/product-list.vue";
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-  components: {},
+  components: { hero, ProductList },
 };
 </script>
